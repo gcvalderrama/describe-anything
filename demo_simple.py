@@ -146,7 +146,7 @@ def apply_sam(image, input_points):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Describe Anything gradio demo")
-    parser.add_argument("--server_addr", "--host", type=str, default="127.0.0.1", help="The server address to listen on.")
+    parser.add_argument("--server_addr", "--host", type=str, default="0.0.0.0", help="The server address to listen on.")
     parser.add_argument("--server_port", "--port", type=int, default=7860, help="The port to listen on.")
     parser.add_argument("--model-path", type=str, default="nvidia/DAM-3B", help="Path to the model checkpoint")
     parser.add_argument("--prompt-mode", type=str, default="focal_prompt", help="Prompt mode")
